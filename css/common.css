@@ -1,0 +1,373 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Do+Hyeon|Mukta+Malar:700|Mukta:400,700|Nunito+Sans:400,700|Nunito:400,700|Questrial);
+
+	
+
+/*바디색상*/
+body {
+  background-color: #fff;
+}
+
+/*상단영역*/
+.top {
+  position: fixed;
+  width: 100%;
+  max-width: 1400px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8%;
+  z-index: 999;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 0 #ccc, -1px 0 #ccc, 0 1px #ccc, 0 -1px #ccc;
+}
+
+#top {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  background-color: rgba(153, 153, 153, .3);
+  z-index: 999999999;
+}
+
+/*로고*/
+.logo {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/*메뉴바*/
+.menubar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 999;
+  white-space: nowrap;
+}
+
+.menubar ul {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+}
+
+.menubar li {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-left: 2%;
+}
+
+.menubar li a:hover {
+  color: #fff;
+  text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000;
+}
+
+/*햄버거 메뉴*/
+.ham {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  display: none;
+  z-index: 9999999;
+  cursor: pointer;
+}
+
+.ham_menu {
+  position: fixed;
+  width: 100%;
+  height: 92%;
+  display: none;
+  font-size: 3rem;
+  float: right;
+  top: 8%;
+  z-index: 99999;
+  background-color: rgba(255, 255, 255, .8);
+  overflow: hidden;
+}
+
+.ham_menu ul {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.ham_menu ul li {
+  position: relative;
+  float: none;
+  height: 33.33333%;
+  outline: 1px solid #000;
+}
+
+.ham_menu ul li a:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.ham_hatch img,
+.ham_club img,
+.ham_country img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.ham_hatch img {
+  top: -10%;
+  height: 100%;
+}
+
+.ham_club img {
+  top: 15%;
+  height: 59%;
+}
+
+.ham_country img {
+  top: 5%;
+  height: 80%;
+}
+
+/*중앙영역*/
+.page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.memain{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+/*서브페이지 공통 css*/
+
+.sbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sub {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  /*  outline: 2px dashed hotpink;*/
+  /*  background-color: floralwhite;*/
+  margin: 0 auto;
+}
+
+/*서브페이지 메인영상*/
+.youtubeP {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+}
+
+/*비디오 가림막*/
+.vidbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1400px;
+  height: 92%;
+  background-color: transparent;
+}
+
+/*메인 메뉴*/
+
+.gnb {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 8%;
+}
+
+#gnb {
+  position: fixed;
+  width: 100%;
+  height: 8%;
+  max-width: 1400px;
+  z-index: 9999;
+  bottom: 0;
+}
+
+#gnb li {
+  float: left;
+  width: 33.333333%;
+  text-align: center;
+  font-size: 3.2rem;
+  height: 100%;
+  line-height: 100%;
+  background-color: #000;
+  white-space: nowrap;
+}
+
+#gnb li a {
+  color: #fff;
+}
+
+.selM {
+  background-color: #fff !important;
+}
+
+.selM a {
+  color: #000 !important;
+}
+
+/*서브페이지 FAST FACT*/
+.photobox {
+  position: absolute;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.fslide {
+  position: absolute;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  display: none;
+}
+
+.fslide:first-child {
+  display: block;
+}
+
+.ff0,
+.ff1,
+.ff2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 97%;
+  margin-top: 1%;
+}
+
+/*이동버튼 공통*/
+.abtn {
+  position: absolute;
+  width: 3%;
+  height: 5%;
+  font-size: 5rem;
+  color: #000;
+  top: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 9999;
+  text-shadow: 1px 0 #ccc, -1px 0 #ccc, 0 1px #ccc, 0 -1px #ccc;
+}
+
+/*왼쪽버튼*/
+.btnL {
+  left: 3%;
+}
+
+/*오른쪽버튼*/
+.btnR {
+  right: 0;
+}
+
+/*하단영역*/
+#bottom {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 40%;
+  font-family: 'Mukta Malar', sans-serif;
+  /*  background-color: rgba(0, 0, 0, .5);*/
+}
+
+/*하단 좌,우측 공통 class*/
+.company {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  color: #111;
+}
+
+/*하단 좌측*/
+.infoleft{
+  float: left;
+  width: 50%;
+}
+.infoleft h2 {
+  font-size: 3rem;
+}
+
+.infoleft address {
+  margin: 10px 2px;
+}
+
+.infoleft p {
+  margin: 20px 2px;
+}
+
+/*하단 우측*/
+.inforight{
+  position: absolute;
+  float: right;
+  width: 100%;
+  height: 100%;
+}
+.cinfo {
+  position: absolute;
+  width: 100%;
+  top: 5%;
+}
+
+.cinfo li {
+  float: left;
+  font-size: 1.3rem;
+  margin-right: 1%;
+}
+
+.sns {
+  position: absolute;
+  width: 30%;
+  bottom: 50%;
+  margin-left: 70%;
+}
+
+.sns a img {
+  float: left;
+  width: 20%;
+  margin: 2%;
+}
+
+.inforight a {
+  color: #111;
+}

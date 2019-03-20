@@ -1,0 +1,222 @@
+@charset "utf-8";
+/*SOO"MINI" 5 DOOR HATCH 메인페이지 CSS*/
+@import url(grid_bg.css);
+@import url(common.css);
+@import url(grid_set.css);
+@import url(base.css);
+@import url(reset.css);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Do Hyeon', 'Nunito', sans-serif;
+  /*  background-color: #000;*/
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hatch a {
+  color: #006f04;
+  text-shadow: 1px 0 #ccc, -1px 0 #ccc, 0 1px #ccc, 0 -1px #ccc;
+}
+
+.sm {
+  background-color: #3a3726;
+}
+
+.sb1 {
+  background-color: #6e6a62;
+}
+
+.sb2 {
+  background-color: #4e4f4d;
+}
+
+.sb3 {
+  background-color: #63604d;
+}
+
+
+/*서브페이지 360view*/
+
+/*360view 소개텍스트*/
+.extxt {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: 0;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.05);
+  /*  background: url(../images/m1.jpg) no-repeat center/cover;*/
+}
+
+/*360view 박스만들기*/
+.ex360box {
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  width: 100%;
+  background-image: url(../images/5door/360view/bg.JPG);
+  cursor: pointer;
+}
+
+/*360view 사진들어가는 공간*/
+.drspace::before {
+  /*비율밀기*/
+  content: "";
+  display: block;
+  cursor: pointer;
+}
+
+.exbox {
+  /*이미지*/
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+.drspace {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 90%;
+}
+
+.drspace > span {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 90%;
+}
+
+
+/*서브페이지 FAST FACT*/
+.fs2 {
+  background-color: #f2f2f2;
+}
+
+.fs3 {
+  background-color: #1e1f23;
+}
+
+.f1txt {
+  position: absolute;
+  z-index: 1;
+  text-align: right;
+  font-size: 6rem;
+  font-weight: bold;
+  right: 1%;
+  top: 12%;
+}
+
+.f2txt {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 50%;
+  color: #555;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+/*서브페이지 M.Y.S*/
+.colorbox {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  background-color: #000;
+  white-space: nowrap;
+}
+
+.colortxt {
+  position: absolute;
+  color: #fff;
+  font-size: 5rem;
+  top: 12%;
+  left: 13%;
+  z-index: 3;
+}
+
+.colorbar {
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  height: 10%;
+  /*자식요소 flex 시키기*/
+  display: flex;
+  /*각 요소의 사이값 일정*/
+  justify-content: space-between;
+  /*세로중앙정렬*/
+  align-items: center;
+  left: 12%;
+  margin-top: 12%;
+  z-index: 3;
+  white-space: nowrap;
+  /*	transform: translateX(-50%);*/
+}
+
+.cbtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.c1 {
+  background-color: #CB171A;
+}
+
+.c2 {
+  background-color: #8C8C8C;
+}
+
+.c3 {
+  background-color: #44D9F1;
+}
+
+.c4 {
+  background-color: #0B6017;
+}
+
+.c5 {
+  background-color: #FDFCD7;
+}
+
+.c6 {
+  background-color: #2B18CF;
+}
+
+.self {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  background: url(../images/5door/color/bg.png) no-repeat center/cover;
+}
+
+.ccar {
+  position: absolute;
+  top: 73%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: auto;
+  height: 80%;
+  /*	display: none;*/
+}

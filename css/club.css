@@ -1,0 +1,228 @@
+@charset "utf-8";
+/*SOO"MINI" 5 DOOR HATCH 메인페이지 CSS*/
+@import url(grid_bg.css);
+@import url(common.css);
+@import url(grid_set.css);
+@import url(base.css);
+@import url(reset.css);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Do Hyeon', 'Nunito', sans-serif;
+  /*  background-color: #000;*/
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.club a{
+  color: #a50202;
+  text-shadow: 1px 0 #ccc, -1px 0 #ccc, 0 1px #ccc, 0 -1px #ccc;
+}
+
+/*서브페이지 큰 박스*/
+
+.sm {
+  background-color: #190a0b;
+}
+
+.sb1 {
+  background-color: #573c40;
+}
+
+.sb2 {
+  background-color: #292324;
+}
+
+.sb3 {
+  background-color: #29272e;
+}
+
+
+/*서브페이지 360view*/
+
+/*360view 소개텍스트*/
+.extxt {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: 0;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.05);
+  /*  background: url(../images/m1.jpg) no-repeat center/cover;*/
+}
+
+/*360view 박스만들기*/
+.ex360box {
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  width: 100%;
+  background-image: url(../images/clubman/360view/bg.png);
+  cursor: pointer;
+}
+
+/*360view 사진들어가는 공간*/
+.drspace::before {
+  /*비율밀기*/
+  content: "";
+  display: block;
+  cursor: pointer;
+}
+
+.exbox {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+.drspace {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 90%;
+}
+
+.drspace > span {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 90%;
+}
+
+/*서브페이지 FAST FACT*/
+.fs2 {
+  background-color: #f2f2f2;
+}
+
+.fs3 {
+  background-color: rgba(0, 0, 0, 0.33);
+}
+
+.f1txt {
+  position: absolute;
+  z-index: 1;
+  font-size: 6rem;
+  font-weight: bold;
+  left: 5%;
+  top: 20%;
+}
+
+.f1txt p:nth-child(2) {
+  color: #411212;
+}
+
+.f1txt p:nth-child(3) {
+  margin-top: 28%
+}
+
+.f2txt {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 49%;
+  transform: translateY(-50%);
+  color: #410303;
+  text-shadow: 1px 0 #ccc, -1px 0 #ccc, 0 1px #ccc, 0 -1px #ccc;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+
+/*서브페이지 M.Y.S*/
+.colorbox {
+  width: 100%;
+  max-width: 1400px;
+  height: 30% !important;
+  top: 70% !important;
+  background: url(../images/clubman/color/bg.jpg) no-repeat center/cover;
+}
+
+.colortxt1 {
+  position: absolute;
+  color: #fff;
+  font-size: 4rem;
+  top: 2%;
+  right: 3%;
+  z-index: 3;
+}
+
+.colortxt2 {
+  position: absolute;
+  width: 45%;
+  color: #fff;
+  font-size: 2.1rem;
+  top: 13%;
+  right: 3%;
+  z-index: 3;
+  text-align: right;
+  font-family: 'Nunito', sans-serif;
+}
+
+.colorbar {
+  position: absolute;
+  width: 40%;
+  left: 10%;
+}
+
+.cbtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 15px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,.4);
+}
+
+.c1 {
+  background-color: #782836;
+}
+
+.c2 {
+  background-color: #10223c;
+}
+
+.c3 {
+  background-color: #dad3ca;
+}
+
+.c4 {
+  background-color: #0c3022;
+}
+
+.c5 {
+  background-color: #040404;
+}
+
+.c6 {
+  background-color: #9e9d9a;
+}
+
+.self {
+  position: absolute;
+  width: 100%;
+  height: 70% !important;
+  top: 10;
+  left: 0;
+  background: url(../images/clubman/color/bg.jpg) no-repeat center/cover;
+}
+
+.ccar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  height: 100%;
+}

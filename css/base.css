@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+a { text-decoration:none; color:#222; }
+/*a:hover { color:#666; }*/
+img{
+  border: none;/*이미지 링크시 테두리없앰*/
+  vertical-align: bottom;/*이미지 박스에 넣었을때 하단간극없애기*/
+  /*하단간극 없애는 또하나의 방법
+    display:block; - 이미지를 block으로 변경하면 하단간극없어짐
+     그런데 이방법은 이미지가 block이 되면 안되는 경우 적용못함!
+  */
+}
+
+h1,h2,h3,h4,h5,h6 { font-size:100%; }
+address{font-style:normal; font-weight:normal;}
+
+
+html{ font-size: 10px; }
+body{ 
+  font-size: 1.6em; 
+  overflow-x: hidden;
+/*  word-spacing: -0.2em;*/
+/*
+  line-height: 100%;
+}
+*/
+
+
+
+
+
+
+

@@ -1,0 +1,391 @@
+@charset "utf-8";
+/* media.css - 미디어쿼리 CSS*/
+
+/*1024px 이하*/
+@media only screen and (max-width:1024px) {
+
+  html {
+    font-size: 7px;
+    overflow-y: hidden;
+  }
+  body{
+    overflow-x: hidden;
+    
+  }
+  #top{
+    width: 100vw;
+  }
+  
+  /*상단 기본메뉴 없애기*/
+  .menubar {
+    display: none;
+  }
+
+  /*햄버거 메뉴 보이기*/
+  .ham {
+    display: block;
+  }
+
+  .ham_menu{
+    width: 100%;
+    display: block;
+    right: -100%;
+  }
+  .ham_hatch img{
+    position: absolute;
+    height: 100%;
+  }
+  .ham_club img{
+    position: absolute;
+    height: 55%;
+  }
+  .ham_country img{
+    position: absolute;
+    height: 70%;
+  }
+
+  /*메인 바꾸기*/
+  
+  #main span{
+    display: block;
+  }
+  .m1,
+  .m2,
+  .m3 {
+    display: none;
+  }
+
+  #main {
+    background: #000;
+  }
+  .mainmain{
+    display: none;
+  }
+
+  .mediamain {
+    display: block;
+    background-color: #000;
+    position: relative;
+    padding-top: 16%;
+  }
+
+  .mec1,
+  .mec2,
+  .mec3 {
+    height: 33.3333%;
+    outline: 1px solid #fff;
+  }
+
+  /*gnb 메뉴 숨기기*/
+  .gnb,
+  #gnb {
+    display: none;
+  }
+
+
+  /**********  서브 공통박스 변경 ***********/
+  /*서브 각 박스 height값 auto로 변경*/
+  .sbox,
+  .sub,
+  .introm,
+  .intropage,
+  .mediamain{
+    height: auto;
+  }
+  .introm{
+    margin: 0 auto;
+  }
+
+  .sub::before,
+  .self::before,
+  .introm::before,
+  .intropage::before
+  {
+    content: "";
+    display: block;
+    padding-top: 55%;
+  }
+  
+  .ham_hatch img{
+    position: absolute;
+    height: 100%;
+  }
+  .ham_club img{
+    position: absolute;
+    height: 55%;
+  }
+  .ham_country img{
+    position: absolute;
+    height: 70%;
+  }
+
+  .infoleft p{
+    font-size: 1rem;
+  }
+  .cinfo li a{
+    font-size: 1rem;
+  }
+  .sns {
+    top: 10%;
+    left: -5%;
+  }
+  .bottom{
+    font-size: 2rem !important;
+  }
+
+  .extxt {
+    top: -30px;
+  }
+
+  .self {
+    top: 35%;
+    left: 0;
+    transform: none;
+  }
+
+  .colortxt {
+    top: 15%;
+    left: 50%;
+    white-space: nowrap;
+  }
+
+  .colorbar {
+    top: 15%;
+  }
+
+  .cbtn {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+
+  .ccar {
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  /*hatch content*/
+  .hatf1txt {
+    top: 20%;
+  }
+
+  .hatf2txt {
+    white-space: nowrap;
+  }
+
+  .hatcolorbar {
+    margin-top: 0;
+    left: 1%;
+  }
+  .hatcolortxt{
+    margin-left: 1%;
+    top: 12%;
+    font-size: 4.5rem;
+  }
+  /*clubman content*/
+  .clubself img {
+    left: 50%;
+  }
+  .clubcolortxt2{
+    width: 60%;
+  }
+
+  .clubcolorbar {
+    top: 0%;
+    left: 0;
+  }
+
+  /*countryman content*/
+  .countf2txt {
+    left: 15%;
+  }
+
+  .countf2txt p:nth-child(1) {
+    font-size: 3rem !important;
+  }
+
+  .countf2txt p:nth-child(2) {
+    font-size: 1rem !important;
+  }
+
+  .countryself img {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .countrycolorbar {
+    width: 50%;
+    left: 2%;
+  }
+
+  .countrycolortxt {
+    top: 0%;
+    left: 2%;
+  }
+  
+
+}
+
+/*1024px 이하*/
+
+/*425px 이하*/
+@media only screen and (max-width:425px) {
+
+  html {
+    font-size: 4px;
+  }
+  .logo img{
+    width: 80px;
+  }
+  
+  /**********  서브 공통박스 변경 ***********/
+  /*서브 각 박스 height값 auto로 변경*/
+  .sbox,
+  .sub {
+    height: auto;
+  }
+
+  .sub::before,
+  .self::before {
+    content: "";
+    display: block;
+    padding-top: 55%;
+  }
+
+  .extxt {
+    top: -30px;
+  }
+
+  .self {
+    top: 35%;
+    left: 0;
+    transform: none;
+  }
+
+  .colortxt {
+    top: 15%;
+    left: 50%;
+    font-size: 4rem;
+    white-space: nowrap;
+  }
+
+  .colorbar {
+    top: 15%;
+  }
+
+  .cbtn {
+    width: 15px !important;
+    height: 15px !important;
+    margin: 0;
+  }
+
+  .ccar {
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  .bottom{
+    font-size: 1rem;
+  }
+
+  .cinfo {
+    top: 0;
+    left: 20%;
+  }
+
+  .cinfo li {
+    width: 80%;
+    float: none;
+  }
+
+  .sns {
+    top: 40%;
+    left: -5%;
+  }
+
+  /*hatch content*/
+  .hatf1txt {
+    top: 20%;
+    font-size: 5rem;
+  }
+
+  .hatf2txt {
+    white-space: nowrap;
+  }
+
+  .hatcolorbar {
+    width: 40%;
+    margin: 10px;
+    left: 5%;
+  }
+  .hatcolortxt{
+    margin: 0;
+    top: 13%;
+  }
+
+  .hatself img {
+    top: 17%;
+    left: 20%;
+  }
+
+  /*clubman content*/
+  .clubself img {
+    left: 50%;
+  }
+
+  .clubcolorbar {
+    width: 100%;
+    top: 12%;
+    left: 61%;
+  }
+
+  .clubcolorbar .cbtn {
+    margin: 5px !important;
+  }
+
+  .clubcolortxt1 {
+    top: -20%;
+  }
+
+  .clubcolortxt2 {
+    top: -10%;
+    width: 100%;
+  }
+
+  /*countryman content*/
+  .countf2txt {
+    width: 50%;
+    text-align: left;
+    left: 5%;
+    top: 10%;
+  }
+
+  .countf2txt p:nth-child(1) {
+    font-size: 3.2rem !important;
+  }
+
+  .countf2txt p:nth-child(2) {
+    display: none;
+  }
+
+  .countryself img {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .countrycolorbar {
+    width: 50%;
+    left: 50%;
+  }
+
+  .countrycolortxt {
+    top: -10%;
+    left: 38%;
+    font-size: 3.5rem;
+  }
+}
+
+/*425px 이하*/
